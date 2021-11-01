@@ -1,0 +1,9 @@
+- EDA
+- Data processing (fillna, drop)
+- outlier treatment
+- feature scaling
+- function to output metrics by used model
+- treat imbalance in data and modeling
+- feature selection using rfecv(recursive feature elimination cross validated)
+- logistic regression, decision tree, randomforest, KNN, lightgbm, gradientboosting, XGBoost, ADA boost, GaussianNB
+- hyperparameter tuning
