@@ -1,3 +1,4 @@
+Project pipeline
 - EDA
 - Data processing (fillna, drop)
 - outlier treatment
@@ -5,7 +6,7 @@
 - function to output metrics by used model
 - treat imbalance in data and modeling
 - feature selection using rfecv(recursive feature elimination cross validated)
-- logistic regression, decision tree, randomforest, KNN, lightgbm, gradientboosting, XGBoost, ADA boost, GaussianNB
+- Model building
 - hyperparameter tuning
 
 
@@ -19,7 +20,7 @@ Variables to drop
 - FATHER_HI_EDU_CD
 - MOTHER_HI_EDU_CD
 - DEGREE_GROUP_CD
-- FIRST_TERM_EARNED_HRS after finding the diff
+- FIRST_TERM_EARNED_HRS after finding the diff      alternatively we could divide earned/attempted to get that year's performance 
 - SECOND_TERM_EARNED_HRS after finding the diff
 - GROSS_FIN_NEED
 
@@ -30,3 +31,92 @@ Variables to impute
 - HIGH_SCHL_NAME
 - SECOND_TERM_ATTEMPT_HRS with 0
 - SECOND_TERM_EARNED_HRS with 0 
+
+Model Building
+- Logistic regression
+- Randomforest
+- Gradientboosting
+- ADA boost
+- XGBoost
+- stats glm
+- SVM
+- others
+	- KNN
+	- Decision tree
+
+Hyper-parameter Optimization
+- Randomforest
+Confusion matrix:
+  [[792  11]
+ [168  49]] 
+
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.82      0.99      0.90       803
+           1       0.82      0.23      0.35       217
+
+    accuracy                           0.82      1020
+   macro avg       0.82      0.61      0.63      1020
+weighted avg       0.82      0.82      0.78      1020
+ROC AUC score:  0.7087620731014456
+
+- Logistic regression
+Confusion matrix:
+  [[787  16]
+ [164  53]] 
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.83      0.98      0.90       803
+           1       0.77      0.24      0.37       217
+
+    accuracy                           0.82      1020
+   macro avg       0.80      0.61      0.63      1020
+weighted avg       0.81      0.82      0.79      1020
+ROC AUC score:  0.6942800902146902
+
+- Gradient boosting
+Confusion matrix:
+  [[780  23]
+ [160  57]] 
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.83      0.97      0.90       803
+           1       0.71      0.26      0.38       217
+
+    accuracy                           0.82      1020
+   macro avg       0.77      0.62      0.64      1020
+weighted avg       0.80      0.82      0.79      1020
+ROC AUC score:  0.700503870852965
+
+- ADA boost
+Confusion matrix:
+  [[782  21]
+ [159  58]] 
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.83      0.97      0.90       803
+           1       0.73      0.27      0.39       217
+
+    accuracy                           0.82      1020
+   macro avg       0.78      0.62      0.64      1020
+weighted avg       0.81      0.82      0.79      1020
+ROC AUC score:  0.6960792190575665
+
+- XGB
+Confusion matrix:
+  [[755  48]
+ [151  66]] 
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.83      0.94      0.88       803
+           1       0.58      0.30      0.40       217
+
+    accuracy                           0.80      1020
+   macro avg       0.71      0.62      0.64      1020
+weighted avg       0.78      0.80      0.78      1020
+ROC AUC score:  0.6854365254718767 
