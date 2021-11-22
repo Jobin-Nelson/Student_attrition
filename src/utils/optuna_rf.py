@@ -6,7 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, recall_score, roc_auc_score
 
 from functools import partial
-from optuna.trial import Trial as trial
 import optuna
 
 def optimize(trial, X, y):
