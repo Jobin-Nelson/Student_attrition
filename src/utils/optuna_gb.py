@@ -12,7 +12,7 @@ import optuna
 
 def optimize(trial, X, y):
     n_estimators = trial.suggest_int("n_estimators",10,300,)
-    learning_rate = trial.suggest_uniform("learning_rate",0.05, 2.5)
+    learning_rate = trial.suggest_uniform("learning_rate",0.01, 2.5)
     loss = trial.suggest_categorical("loss",["deviance","exponential"])
     max_depth = trial.suggest_int("max_depth",1,7)
 
@@ -35,11 +35,11 @@ def optimize(trial, X, y):
     return -1*accuracy
 
 if __name__ == "__main__":
-    df = pd.read_csv("..\\cleaned_data\\Cleaned_data.csv")
+    df = pd.read_csv("..\\cleaned_data\\cleaned_minimal_data.csv")
     X = df.drop("Target",axis=1).values
     y = df["Target"].values
 
     optimization_func = partial(optimize, X=X, y=y)
     study = optuna.create_study(direction='minimize')
-    study.optimize(optimization_func,n_trials=50)
-    print(study.best_trial)
+    study.optimize(optimization_func,n_trials=100)
+    print(study.best_params)
