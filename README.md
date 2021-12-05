@@ -22,8 +22,8 @@ Primarily, data will be of the following high level categories:
 
 ## Overview
 - [Basic Exploratory Data Analysis](https://github.com/Jobin-Nelson/Student_attrition/blob/master/src/Student_attrition.ipynb): EDA to understand student profiles, early attrition rates in various programs, how does attrition change across various combinations of student characteristics
-- [Data Cleaning](https://github.com/Jobin-Nelson/Student_attrition/blob/master/src/Student_attrition.ipynb): Raw data is not optimized for modeling, it contains considerable missing values which we need to treat before any form of modeling
-- Feature Engineering: Forming better features and removing reduntant information from the data to facilitate modeling stage
+- [Data Cleaning](https://github.com/Jobin-Nelson/Student_attrition/tree/master/src/cleaned_data): Raw data is not optimized for modeling, it contains considerable missing values which we need to treat before any form of modeling
+- [Feature Engineering](https://github.com/Jobin-Nelson/Student_attrition/blob/master/src/Student_attrition.ipynb): Forming better features and removing reduntant information from the data to facilitate modeling stage
 - [Modeling](https://github.com/Jobin-Nelson/Student_attrition/blob/master/src/Student_attrition.ipynb): Trying out different models to get a baseline performance
 - [Hyperparameter Tuning](https://github.com/Jobin-Nelson/Student_attrition/tree/master/src/tuning): Performing hyperparameter tuning on promising models with Optuna and HyperOpt to optmize the results
 - [Report Building](https://github.com/Jobin-Nelson/Student_attrition/blob/master/report/Attrition_report.pptx): Presenting the main takeaways and insights gained through the analysis in the form of Powerpoint report
