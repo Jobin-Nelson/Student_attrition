@@ -11,7 +11,7 @@ Some key strategic goals for the University are:
 ### [Objective](https://github.com/Jobin-Nelson/Student_attrition/blob/master/input/Capstone%20Project.pdf)
 1. Identify key drivers of early student attrition
 2. Build a predictive model to identify students with higher early attrition risk
-3. Recommed appropriate interventions based on the analysis
+3. Recommend appropriate interventions based on the analysis
 
 ### [Data](https://github.com/Jobin-Nelson/Student_attrition/blob/master/input/Student%20Applications%20%26%20Performance.xlsx)
 Primarily, data will be of the following high-level categories:
