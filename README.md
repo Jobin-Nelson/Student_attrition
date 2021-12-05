@@ -1,10 +1,10 @@
 # Student attrition
 
 ## [Project Description](https://github.com/Jobin-Nelson/Student_attrition/blob/master/input/Capstone%20Project.pdf)
-***Clearwater State University*** offers a wide variety of degree programs, from online degrees to a doctorate in education.Programs are offered in the streams of the arts, education, business & nursing.
-Some key strategic goals fo the University are:
+***Clearwater State University*** offers a wide variety of degree programs, from online degrees to a doctorate in education. Programs are offered in the streams of the arts, education, business & nursing.
+Some key strategic goals for the University are:
 - Increase enrolment of students
-- Improve retention, progression and graduation rates
+- Improve retention, progression, and graduation rates
 - Recruit better academically qualified undergraduate and graduate students
 - Increase external funding and recognition
 
@@ -14,7 +14,7 @@ Some key strategic goals fo the University are:
 3. Recommed appropriate interventions based on the analysis
 
 ### [Data](https://github.com/Jobin-Nelson/Student_attrition/blob/master/input/Student%20Applications%20%26%20Performance.xlsx)
-Primarily, data will be of the following high level categories:
+Primarily, data will be of the following high-level categories:
 - Student Application data (demographics, High school GPA)
 - Financial indicators (financial background, eligibility, quantum of aid)
 - Course Preferences
